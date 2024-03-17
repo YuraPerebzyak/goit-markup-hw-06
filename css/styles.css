@@ -37,7 +37,7 @@ font-family: "Raleway", sans-serif;
 .link {
     text-decoration: none;
 }
-.adress-links {
+.address-links{
     font-style: normal;
     }
 .link-address {
@@ -177,6 +177,7 @@ text-transform: capitalize;
     font-size: 16px;
     line-height: 150%;
     color: #f4f4fd;
+    letter-spacing: 0.02em;
 }
 ul {
     list-style-type: none;
