@@ -196,9 +196,7 @@ button {
     background: #f4f4fd;
     width: 1440px;
     margin: 0 auto;
-    align-items: center;
-    
-   
+    align-items: center;   
 }
 .team-list {
     display: flex;
@@ -218,7 +216,7 @@ button {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
    
 }
 .team-block {
