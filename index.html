@@ -15,65 +15,78 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="header-links" href=""
-          >Web<span class="header-text">Studio</span></a
-        >
-        <ul class="nav-links">
-          <li><a class="link" href="./index.html">Studio</a></li>
-          <li><a class="link" href="">Portfolio</a></li>
-          <li><a class="link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="address-links">
-        <ul>
-          <li>
-            <a class="link-address" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link-address" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <div class="container">
+    <header class="header-body">
+      <nav class="navigation">
+          <a class="header-links" href=""
+            >Web<span class="header-text">Studio</span></a
+          >
+          <ul class="nav-links">
+            <li class="nav-item"><a class="link" href="./index.html">Studio</a></li>
+            <li class="nav-item"><a class="link" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="address-links">
+            <li class="address-item">
+              <a class="link-address" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="link-address" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
+      <div class="container">
       <section class="section-one">
         <h1 class="header-title">Effective Solutions for Your Business</h1>
         <button type="button" class="button-text">Order Service</button>
+        </div>
       </section>
-      <section>
+      <div class="container">
+        <section class="section-two">
         <h2 hidden>Our advantages</h2>
-        <ul>
-          <li>
+        <ul class="list-section-two">
+          <li class="item-section-two">
             <h3 class="title">Strategy</h3>
             <p class="text-section-two">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="item-section-two">
             <h3 class="title">Punctuality</h3>
             <p class="text-section-two">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="item-section-two">
             <h3 class="title">Diligence</h3>
             <p class="text-section-two">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="item-section-two">
             <h3 class="title">Technologies</h3>
             <p class="text-section-two">
               Design practice focused on digital experiences. We bring forth a
@@ -82,9 +95,11 @@
           </li>
         </ul>
       </section>
-      <section class="section-three">
+      </div>
+      <div class="container"> 
+        <section class="section-three">
         <h2 class="title-team">Our Team</h2>
-        <ul>
+        <ul class="team-list">
           <li class="our-team-list">
             <img
               src="./images/mark.jpg"
@@ -127,80 +142,98 @@
           </li>
         </ul>
       </section>
-      <section>
+      </div>
+      <div class="container">
+      <section class="section-four">
         <h2 class="portfolio">Our Portfolio</h2>
-        <ul>
-          <li>
+        <ul class="list-portfolio">
+          <li class="list-item-potfolio">
             <img
               src="./images/bankingapp.jpg"
               alt="Banking App"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Banking App</h3>
             <p class="type-product">App</p>
+            </div>
           </li>
-          <li>
+          <li class="list-item-potfolio">
             <img
               src="./images/cashlesspayment.jpg"
               alt="Cashless Payment"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Cashless Payment</h3>
             <p class="type-product">Marketing</p>
+            </div>
           </li>
-          <li>
+          <li class="list-item-potfolio">
             <img
               src="./images/meditationapp.jpg"
               alt="Meditation App"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Meditation App</h3>
             <p class="type-product">App</p>
+            </div>
           </li>
-          <li>
+          <li class="list-item-potfolio">
             <img
               src="./images/taxiservice.jpg"
               alt="Taxi Service"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Taxi Service</h3>
             <p class="type-product">Marketing</p>
+            </div>
           </li>
-          <li>
+          <li class="list-item-potfolio">
             <img
               src="./images/screenillustrations.jpg"
               alt="Screen Illustrations"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Screen Illustrations</h3>
             <p class="type-product">Design</p>
+            </div>
           </li>
-          <li>
+          <li class="list-item-potfolio">
             <img
               src="./images/onlinecourses.jpg"
               alt="Online Courses"
               width="360"
               height="300"
             />
+            <div class="border-list-item">
             <h3 class="name-product">Online Courses</h3>
             <p class="type-product">Marketing</p>
+            </div>
           </li>
         </ul>
       </section>
+      </div>
     </main>
+    <div class="container">
     <footer class="footer-case">
+      
       <a class="footer-links" href="/"
         >Web<span class="footer-text-link">Studio</span></a
       >
       <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
+        Increase the flow of customers and <br /> sales for your business with digital<br />
         marketing & growth solutions.
       </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
