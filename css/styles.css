@@ -32,6 +32,7 @@ body {
     margin:0 auto;
     padding: 0 15px;
 }
+
 .header-links {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -121,7 +122,11 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 1440px;
-    padding: 188px 0;      
+    padding: 188px 0;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 button {
     border-radius: 4px;
@@ -175,7 +180,21 @@ button {
 .list-section-two .item-section-two {
     width: calc((100% - 24px)/4); 
 } 
-
+.icon-box-container {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    fill: none;
+}
 .title {
     padding-bottom: 8px;
     font-weight: 500;
@@ -201,7 +220,7 @@ button {
 .team-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;  
+    gap: 24px;   
 }
 
 .title-team {
@@ -238,6 +257,34 @@ button {
     text-align: center;
     color: #434455;
 }
+.social-links {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.social-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;   
+}
+.social-link:hover {
+    background-color: #4d5ae5;
+}
+.social-link {
+    width: 100%;
+    height: 100%;
+}
+.social-icon {
+    fill: none;
+}
 .portfolio {
     text-transform: capitalize;
     font-size: 36px;
@@ -263,7 +310,45 @@ button {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
+    
+    }
+.overlay-box {
+position: relative;
+overflow: hidden;
 }
+.overlay {
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    line-height: 1.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f51b5;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.overlay-box:hover .overlay {
+    transform: translateY(0);
+}
+.overlay p {
+    display: flex;
+    align-items: center;
+    width: 296px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    margin-top: 40px;
+    margin-left: 32px;
+}
+.finger-icon {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-self: center;
+   }
 .name-product {
     font-weight: 500;
     font-size: 20px;
@@ -277,13 +362,13 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
+    }
+
 .footer-case {
     background: #2e2f42;
     padding: 100px 0;
     width: 1440px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 .footer-links {
     font-family: "Raleway", sans-serif;
@@ -307,6 +392,59 @@ button {
     color: #f4f4fd;
     letter-spacing: 0.02em;
        
+}
+.social-media {
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+.footer-social {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff; 
+    margin-bottom: 16px;   
+}
+.footer-box {
+    display: flex;
+    flex-direction: row;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-links {
+    display: flex;
+    gap: 16px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.footer-social-links .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link:hover {
+    background-color: #31d0aa;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icon {
+    fill: none;
 }
 ul {
     list-style-type: none;
