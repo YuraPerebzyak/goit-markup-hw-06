@@ -532,7 +532,7 @@ overflow: hidden;
     justify-content: center;
     font-family: "Roboto", sans-serif;
     border-radius: 4px;   
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     padding: 8px 24px;
@@ -633,7 +633,6 @@ overflow: hidden;
     border-radius: 4px;
     width: 360px;
     height: 336px;
-    margin-bottom: 8px;
 }
 
 
@@ -656,6 +655,7 @@ overflow: hidden;
     border-radius: 4px;
     width: 100%;
     height: 40px;
+    margin-bottom: 8px;
     background-color: transparent;
     padding-left: 38px;
     outline: transparent;
@@ -665,8 +665,9 @@ overflow: hidden;
 .form-input:hover {
     border-color:#4D5AE5;
 }
-.form-input:hover + .modal-icon
-.form-input:focus + .modal-icon {
+
+.form-input:focus + .modal-icon,
+.form-input:focus ~ .modal-icon {
     fill: #4D5AE5;
 }
 .modal-icon {
@@ -690,6 +691,7 @@ textarea {
     color: rgba(46, 47, 66, 0.4);
     padding-top: 8px;
     padding-left: 16px;
+    margin-bottom: 16px;
 }
 
 .modal-border {
@@ -697,9 +699,6 @@ textarea {
     margin-bottom: 8px;
 }
 
-.comment {
-    margin-bottom: 16px;
-}
 .textarea {
     width: 100%;
     height: 120px;
@@ -723,24 +722,26 @@ textarea {
 .checkbox-div {
     display: inline-flex;
     margin-bottom: 24px;
+    margin-top: 16px;
     max-width: 360px;
 
 }
 
-.chexbox-input:checked + .checkbox-label-span {
+.chexbox-input:checked + .checkbox-label .checkbox-label-span {
     background-color: #404bbf;
     border: none;
     fill:  #F4F4FD; 
 }
 .checkbox-label-span {
     display: inline-flex;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     align-items: center;
     justify-content: center;
     fill: transparent; 
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-label {
@@ -752,6 +753,7 @@ textarea {
 }
 .input-checkbox-icon {
     fill: #f4f4fd;
+    
 }
 .privacy-policy {
     line-height: 133%;
