@@ -1102,6 +1102,7 @@ overflow: hidden;
     .address-links {
         display: flex;
         flex-direction: row;
+        gap: 40px;
     }
     .link-address {
         font-size: 16px;
