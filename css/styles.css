@@ -1088,7 +1088,7 @@ overflow: hidden;
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1152px;
+        max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -1134,6 +1134,13 @@ overflow: hidden;
         padding: 0;
         flex-wrap: nowrap;
     }
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .text-section-two {
+        font-weight: 400;
+    }
     .list-section-two .item-section-two {
         width: calc((100% - 24px)/4);
     }
@@ -1153,18 +1160,26 @@ overflow: hidden;
     .list-item-portfolio {
         width: calc((100% - 48px) / 3);
     }
-
+    .footer-box {
+        display: flex;
+        padding: 0 16px;
+        justify-content: space-between;
+        padding-left: 0;
+        
+    }
     .footer-case .container {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         text-align: left;
-        padding-left: 0;
+        justify-content: space-between;
+
     }
-    .footer-logo {
-        margin-right: 120px;
+    .input-form {
+        border-color: #ffffff;
     }
-    .social-media {
-        margin-right: 80px;
+    .input-form::placeholder {
+        color: #ffffff;
     }
    .modal {
     width: 408px;
